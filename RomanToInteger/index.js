@@ -1,6 +1,6 @@
 let romanToInt = function(str) {
     if (str == null) return -1;
-    var num = roman_to_int(str.charAt(0));
+    let num = roman_to_int(str.charAt(0));
     let pre, curr;
 
     for (let i = 1; i < str.length; i++) {

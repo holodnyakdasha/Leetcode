@@ -4,7 +4,6 @@ function reverse(x) {
         result = result * 10 + x % 10;
         x = x / 10;
     }
-
     if (result < Number.MIN_VALUE || result > Number.MAX_VALUE) {
         return 0;
     } else {
