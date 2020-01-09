@@ -7,9 +7,8 @@ const lengthOfLongestSubstring = (s) => {
         return s.length;
     }
     for(let i =0; i < s.length; i++) {
-        if(hash[s[i]] == null) {
+        if(hash[s[i]] === null) {
             current += 1;
-            console.log(current)
         } else {
             current = Math.min(i - hash[s[i]], current + 1)
         }
